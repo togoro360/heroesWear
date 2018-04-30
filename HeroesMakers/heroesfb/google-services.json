@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "918362777515",
+    "firebase_url": "https://heroesmakers.firebaseio.com",
+    "project_id": "heroesmakers",
+    "storage_bucket": "heroesmakers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918362777515:android:c1f57370f2fbb94a",
+        "android_client_info": {
+          "package_name": "app.heroeswear.com.heroesfb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918362777515-7ecp2lt51sspl2d1768rshr2gh1hkmgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr7K1GdFUKBbE41o9iZ75dMrAyWyojpq8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918362777515:android:383cc0e279feb7a5",
+        "android_client_info": {
+          "package_name": "app.heroeswear.com.heroesmakers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918362777515-6pss62acipbgq52hqap801u9vl3hqpsb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.heroeswear.com.heroesmakers",
+            "certificate_hash": "4bc00cdf94dca5224be03e2552341c0d22a965c8"
+          }
+        },
+        {
+          "client_id": "918362777515-7ecp2lt51sspl2d1768rshr2gh1hkmgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr7K1GdFUKBbE41o9iZ75dMrAyWyojpq8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918362777515-7ecp2lt51sspl2d1768rshr2gh1hkmgl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
