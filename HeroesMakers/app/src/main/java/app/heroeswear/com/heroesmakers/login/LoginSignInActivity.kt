@@ -23,6 +23,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import app.heroeswear.com.heroesfb.FirebaseManager
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -61,6 +62,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
         email_create_account_button.setOnClickListener(this)
         sign_out_button.setOnClickListener(this)
         verify_email_button.setOnClickListener(this)
+        fbManager = FirebaseManager.newInstance()
 
         // [START initialize_auth]
         fbManager?.onCreate()

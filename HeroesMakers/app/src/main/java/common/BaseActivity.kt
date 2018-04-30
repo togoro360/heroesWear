@@ -22,9 +22,8 @@ open class BaseActivity : AppCompatActivity() {
     var mProgressDialog: ProgressDialog? = null
     protected var fbManager: FirebaseManager? = null
 
-    public override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
-        fbManager = FirebaseManager.newInstance()
 
     }
     fun showProgressDialog() {
