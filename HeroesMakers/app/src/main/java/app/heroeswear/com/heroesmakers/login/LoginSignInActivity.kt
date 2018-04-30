@@ -32,7 +32,7 @@ import app.heroeswear.com.heroesmakers.login.models.User
 import common.BaseActivity
 import kotlinx.android.synthetic.main.email_signin_login.*
 
-class LoginActivity : BaseActivity(), View.OnClickListener {
+class LoginSignInActivity : BaseActivity(), View.OnClickListener {
 
     private var mStatusTextView: TextView? = null
     private var mDetailTextView: TextView? = null
@@ -137,12 +137,12 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                     verify_email_button.setEnabled(true)
 
                     if (task.isSuccessful) {
-                        Toast.makeText(this@LoginActivity,
+                        Toast.makeText(this@LoginSignInActivity,
                                 "Verification email sent to " + user.email!!,
                                 Toast.LENGTH_SHORT).show()
                     } else {
                         Log.e(TAG, "sendEmailVerification", task.exception)
-                        Toast.makeText(this@LoginActivity,
+                        Toast.makeText(this@LoginSignInActivity,
                                 "Failed to send verification email.",
                                 Toast.LENGTH_SHORT).show()
                     }

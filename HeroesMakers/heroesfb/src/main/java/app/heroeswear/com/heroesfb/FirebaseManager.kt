@@ -14,7 +14,7 @@ import com.google.android.gms.tasks.Task
 /**
  * Created by livnatavikasis on 29/04/2018.
  */
-public class FirebaseManager(){
+ class FirebaseManager(){
 
     lateinit var mAuth: FirebaseAuth
     var  mCurrentUser: FirebaseUser? = null
@@ -26,7 +26,6 @@ public class FirebaseManager(){
     fun onStart(): FirebaseUser? {
                  // Check if user is signed in (non-null) and update UI accordingly.
            mCurrentUser = mAuth.getCurrentUser();
-//        updateUI(mCurrentUser);
             return mCurrentUser
     }
 
