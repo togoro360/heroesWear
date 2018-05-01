@@ -188,7 +188,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
             signed_in_buttons.setVisibility(View.VISIBLE)
 
             verify_email_button.setEnabled(!user.isEmailVerified)
-            openHomePage(mUser)
+//            openHomePage(mUser)
         } else {
             mStatusTextView!!.setText(R.string.signed_out)
             mDetailTextView!!.text = null

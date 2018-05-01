@@ -23,15 +23,15 @@
     </android.support.v7.widget.Toolbar>
 
 
-    <!--<android.support.design.widget.NavigationView-->
-        <!--android:id="@+id/navigation_view"-->
-        <!--android:layout_width="310dp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_gravity="left"-->
-        <!--android:background="@color/p_Light"-->
-        <!--app:headerLayout="@layout/navigation_header"-->
-        <!--app:itemTextAppearance="@style/text_c3_14"-->
-        <!--app:theme="@style/DrawerTheme" />-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/p_Light"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextAppearance="@style/text_c3_14"
+        app:theme="@style/DrawerTheme" />
 
 </FrameLayout>
 </android.support.v4.widget.DrawerLayout>

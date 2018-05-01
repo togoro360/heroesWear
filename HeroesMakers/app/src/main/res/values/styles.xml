@@ -32,6 +32,17 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="text_c3_14" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/title_bottom_margin</item>
+    </style>
+
+    <style name="DrawerTheme" parent="Theme.AppCompat.Light">
+        <!--<item name="android:colorControlHighlight">@color/guid_c17</item>-->
+        <item name="android:listDivider">@color/drawer_divider</item>
+    </style>
+
     <!-- Dark Buttons -->
     <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
         <item name="colorButtonNormal">@color/grey_500</item>
