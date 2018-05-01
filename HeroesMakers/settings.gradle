@@ -1,1 +1,1 @@
-include ':app', ':heroesfb'
+include ':app', ':heroesfb', 'audioPlayer'
