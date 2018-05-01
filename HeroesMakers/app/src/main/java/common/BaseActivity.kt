@@ -1,14 +1,21 @@
 package common
 
+import android.Manifest
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.provider.Settings
 import android.support.annotation.VisibleForTesting
 import android.support.design.widget.NavigationView
+import android.support.v4.app.ActivityCompat
+import android.support.v4.content.ContextCompat
 import android.support.v4.widget.DrawerLayout
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -26,8 +33,6 @@ import common.controls.SmoothActionBarDrawerToggle
 
 open class BaseActivity : AppCompatActivity() ,  NavigationView.OnNavigationItemSelectedListener
 {
-
-
     @VisibleForTesting
     var mProgressDialog: ProgressDialog? = null
     protected var fbManager: FirebaseManager? = null
@@ -35,10 +40,15 @@ open class BaseActivity : AppCompatActivity() ,  NavigationView.OnNavigationItem
     private var mNavigationView: NavigationView? = null
     private var mDrawerToggle: SmoothActionBarDrawerToggle? = null
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    private val REQUEST_ENABLE_BT = 1
+    private val REQUEST_PERMISSION_ACCESS_COARSE_LOCATION = 1
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.i("david","onCreate")
+        initEmpaE4()
     }
+
 
     protected fun populateNavigationHeaderView(isInit:  Boolean)
     {
@@ -94,5 +104,52 @@ open class BaseActivity : AppCompatActivity() ,  NavigationView.OnNavigationItem
         val intent = Intent(this, HomePageActivity::class.java)
         intent.putExtra("user", user)
         startActivity(intent)
+    }
+
+    private fun initEmpaE4(){
+        if (ContextCompat.checkSelfPermission
+                (this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION), REQUEST_PERMISSION_ACCESS_COARSE_LOCATION)
+        } else {
+            val intent = Intent(this, EmpaE4::class.java)
+            startService(intent)
+        }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        when (requestCode) {
+            REQUEST_PERMISSION_ACCESS_COARSE_LOCATION ->
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission was granted, yay!
+                    val intent = Intent(this, EmpaE4::class.java)
+                    startService(intent)
+                } else {
+                    // Permission denied, boo!
+                    val needRationale = ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                    AlertDialog.Builder(this)
+                            .setTitle("Permission required")
+                            .setMessage("Without this permission bluetooth low energy devices cannot be found, allow it in order to connect to the device.")
+                            .setPositiveButton("Retry") { dialog, which ->
+                                // try again
+                                if (needRationale) {
+                                    // the "never ask again" flash is not set, try again with permission request
+                                    val intent = Intent(this, EmpaE4::class.java)
+                                    startService(intent)
+                                } else {
+                                    // the "never ask again" flag is set so the permission requests is disabled, try open app settings to enable the permission
+                                    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                                    val uri = Uri.fromParts("package", packageName, null)
+                                    intent.data = uri
+                                    startActivity(intent)
+                                }
+                            }
+                            .setNegativeButton("Exit application") { dialog, which ->
+                                // without permission exit is the only way
+                                finish()
+                            }
+                            .show()
+                }
+        }
     }
 }

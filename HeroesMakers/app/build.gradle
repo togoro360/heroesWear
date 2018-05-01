@@ -40,6 +40,7 @@ dependencies {
     implementation 'joda-time:joda-time:2.3'
 
     implementation 'com.empatica.empalink:empalink:2.2@aar'
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
