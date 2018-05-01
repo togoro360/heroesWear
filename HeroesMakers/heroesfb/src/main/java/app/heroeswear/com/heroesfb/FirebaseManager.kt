@@ -57,6 +57,7 @@ class FirebaseManager() {
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
                 updateUserToken()
+                callback.onSignInCompleted(mCurrentUser)
 
             } else {
                 // If sign in fails, display a message to the user.

@@ -16,9 +16,7 @@
 
 package app.heroeswear.com.heroesmakers.login
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
@@ -26,7 +24,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import app.heroeswear.com.common.FBCalbacks
-import app.heroeswear.com.heroesfb.FirebaseManager
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -219,10 +216,12 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
                 mUser.email = user?.email
             }
         initEmpaE4()
+        hideProgressDialog()
         openHomePage(mUser)
     }
 
     override fun onSignOutCompleted() {
+//        finish()
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
     override fun onClick(v: View) {
