@@ -1,7 +1,5 @@
 package app.heroeswear.com.heroesfb
 
-import android.content.ContentValues.TAG
-import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.AuthResult
@@ -37,7 +35,8 @@ class FirebaseManager() {
                 // Sign in success, update UI with the signed-in user's information
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
-                updateUserToken()
+                updateUserEmail(email)
+                updatePushToken()
 
             } else {
                 // If sign in fails, display a message to the user.
@@ -54,7 +53,8 @@ class FirebaseManager() {
                 // Sign in success, update UI with the signed-in user's information
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
-                updateUserToken()
+                updateUserEmail(email)
+                updatePushToken()
 
             } else {
                 // If sign in fails, display a message to the user.
@@ -65,10 +65,17 @@ class FirebaseManager() {
         return mCurrentUser
     }
 
-    private fun updateUserToken() {
-        val token = FirebaseInstanceId.getInstance().token
-        mDatabase.child("users").child(getUid()).child("token").setValue(token)
-        Logger.d("user push token: $token")
+    fun updateUserEmail(email: String) {
+        mDatabase.child("users").child(getUid()).child("email").setValue(email)
+    }
+
+    fun updatePushToken() {
+        mDatabase.child("users").child(getUid()).child("token").setValue(getPushToken())
+        Logger.d("user push token: ${getPushToken()}")
+    }
+
+    fun getPushToken(): String {
+        return FirebaseInstanceId.getInstance().token ?: ""
     }
 
     fun getUid(): String {

@@ -25,6 +25,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import app.heroeswear.com.heroesfb.FirebaseManager
+import app.heroeswear.com.heroesfb.Logger
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -68,6 +69,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
         // [START initialize_auth]
         fbManager?.onCreate()
         // [END initialize_auth]
+
     }
 
     // [START on_start_check_user]
@@ -76,6 +78,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
         // Check if user is signed in (non-null) and update UI accordingly.
         currentUser = fbManager?.onStart()
         updateUI(currentUser)
+        Logger.d("Push token: ${FirebaseManager.newInstance().getPushToken()}")
     }
     // [END on_start_check_user]
 
