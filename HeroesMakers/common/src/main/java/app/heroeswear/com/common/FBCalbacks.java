@@ -7,7 +7,7 @@ import com.google.firebase.auth.FirebaseUser;
  */
 
 public interface FBCalbacks {
-    void onCreateAcountCompleted(FirebaseUser user);
+    void onCreateAccountCompleted(FirebaseUser user);
     void onSignInCompleted(FirebaseUser user);
     void onSignOutCompleted();
 }

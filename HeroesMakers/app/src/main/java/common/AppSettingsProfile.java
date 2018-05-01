@@ -2,17 +2,9 @@ package common;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.text.TextUtils;
-import android.util.Log;
-
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
-import java.util.UUID;
 import java.util.concurrent.locks.ReentrantLock;
 
-import app.heroeswear.com.heroesmakers.login.models.User;
+import app.heroeswear.com.heroesmakers.login.application.App;
 
 
 public class AppSettingsProfile {
@@ -24,6 +16,7 @@ public class AppSettingsProfile {
     private static final String IMMUTABLE_SETTINGS_FILE_NAME = "immutable_app_pref.dat";
 
     private static final String PREF_TIME_ON_EXIT = "PREF_TIME_ON_EXIT";
+    private static final int PUSH = 5;
 
     private static AppSettingsProfile _instance = new AppSettingsProfile();
 
@@ -36,92 +29,90 @@ public class AppSettingsProfile {
     }
 
     public SharedPreferences getPrefsInstance() {
-        return get.getContext().getSharedPreferences(SETTINGS_FILE_NAME, Context.MODE_PRIVATE);
+        return App.getContext().getSharedPreferences(SETTINGS_FILE_NAME, Context.MODE_PRIVATE);
     }
 
     public SharedPreferences getImmutablePrefsInstance() {
-        return GetTaxiApplication.getContext().getSharedPreferences(IMMUTABLE_SETTINGS_FILE_NAME, Context.MODE_PRIVATE);
+        return App.getContext().getSharedPreferences(IMMUTABLE_SETTINGS_FILE_NAME, Context.MODE_PRIVATE);
     }
 
-//    public void clearAll() {
-//        SharedPreferences prefs = getPrefsInstance();
-//        prefs.edit().clear().apply();
-//        GetTaxiApplication.getContext().deleteFile(SETTINGS_FILE_NAME);
-//        _instance = new AppSettingsProfile();
-//    }
+    public void clearAll() {
+        SharedPreferences prefs = getPrefsInstance();
+        prefs.edit().clear().apply();
+        App.getContext().deleteFile(SETTINGS_FILE_NAME);
+        _instance = new AppSettingsProfile();
+    }
 
-    public boolean isFirstStart() {
+    public boolean isSignedIn() {
         return getPrefsInstance().getBoolean("FIRST_LAUNCH", false);
     }
 
-    public void setFirstStart(boolean value) {
+    public void setSignedIn(boolean value) {
         SharedPreferences.Editor editor = getPrefsInstance().edit();
         editor.putBoolean("FIRST_LAUNCH", value);
         editor.apply();
     }
 
-    public float getDefaultTips() {
-        return getPrefsInstance().getFloat("TIPS", -1);
+    public String getUserID() {
+        return getPrefsInstance().getString("USER_ID", "");
     }
 
-    public void setDefaultTips(float tips) {
+    public void setUserID(String userId) {
         SharedPreferences.Editor editor = getPrefsInstance().edit();
-        editor.putFloat("TIPS", tips);
+        editor.putString("USER_ID", userId);
         editor.apply();
     }
 
     public String getPackageName() {
-        return GetTaxiApplication.getContext().getPackageName();
+        return App.getContext().getPackageName();
     }
 
 
+//    public void saveSettings() {
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                settingsLock.lock();
+//                try {
+//                    Log.d(TAG, "Save settings");
+//                    SharedPreferences.Editor editor = getPrefsInstance().edit();
+//                    String serializedSettings = objectToString(Settings.getInstance());
+//                    editor.putString("SETTINGS_GSON", serializedSettings);
+//                    editor.apply();
+//                } finally {
+//                    settingsLock.unlock();
+//                }
+//            }
+//        }).start();
+//    }
 
-
-    public String getDefaultCreditCard() {
-        return getPrefsInstance().getString("DEFAULT_CARD", null);
-    }
-
-    public boolean isPlayStoreRated() {
-        return getPrefsInstance().getBoolean("PLAY_STORE_RATE", false);
-    }
-
-    public void setPlayStoreAsRated(User user) {
-        SharedPreferences.Editor editor = getPrefsInstance().edit();
-        editor.put("USER_PROFILE", user);
-        editor.apply();
-    }
-
-    public void saveSettings() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                settingsLock.lock();
-                try {
-                    Log.d(TAG, "Save settings");
-                    SharedPreferences.Editor editor = getPrefsInstance().edit();
-                    String serializedSettings = ObjectSerializer.objectToString(Settings.getInstance());
-                    editor.putString("SETTINGS_GSON", serializedSettings);
-                    editor.apply();
-                } finally {
-                    settingsLock.unlock();
-                }
-            }
-        }).start();
-    }
-
-    public void restoreSettings(Settings settingsRestorTo) {
-        String raw_settings = getPrefsInstance().getString("SETTINGS_GSON", "");
-        if (!TextUtils.isEmpty(raw_settings)) {
-            long start_time = new Date().getTime();
-            Settings deserializedSettings = (Settings) ObjectSerializer.stringToObject(raw_settings,
-                    Settings.class);
-            if (deserializedSettings != null) {
-                settingsRestorTo.merge(deserializedSettings);
-                settingsRestorTo.save();
-            }
-
-            Logger.d("SettingsRestore", "Restore settings taked " + (new Date().getTime() - start_time) / 1000 + " sec");
-        }
+//    public static synchronized String objectToString(Object object) {
+//
+//        Gson gson = new GsonBuilder()
+//                .setDateFormat("yyyy-MM-dd'T'HH:mm:ss Z")
+//                .registerTypeAdapter(Settings.class, new Settings()).serializeNulls()
+//                .create();
+//        try {
+//            return gson.toJson(object);
+//        }catch(Exception e){
+//            Crashlytics.logException(e);
+//            e.printStackTrace();
+//        }
+//        return null;
+//    }
+//    public void restoreSettings(Settings settingsRestorTo) {
+//        String raw_settings = getPrefsInstance().getString("SETTINGS_GSON", "");
+//        if (!TextUtils.isEmpty(raw_settings)) {
+//            long start_time = new Date().getTime();
+//            Settings deserializedSettings = (Settings) ObjectSerializer.stringToObject(raw_settings,
+//                    Settings.class);
+//            if (deserializedSettings != null) {
+//                settingsRestorTo.merge(deserializedSettings);
+//                settingsRestorTo.save();
+//            }
+//
+//            Logger.d("SettingsRestore", "Restore settings taked " + (new Date().getTime() - start_time) / 1000 + " sec");
+//        }
 
 
         /**

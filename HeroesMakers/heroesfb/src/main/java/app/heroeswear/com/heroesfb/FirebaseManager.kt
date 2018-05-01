@@ -1,7 +1,5 @@
 package app.heroeswear.com.heroesfb
 
-import android.content.ContentValues.TAG
-import android.util.Log
 import app.heroeswear.com.common.FBCalbacks
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -39,12 +37,12 @@ class FirebaseManager() {
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
                 updateUserToken()
-                callback.onCreateAcountCompleted(mCurrentUser)
+                callback.onCreateAccountCompleted(mCurrentUser)
             } else {
                 // If sign in fails, display a message to the user.
                 Logger.e("Error: ${task.exception}")
                 mCurrentUser = null //updateUI(null)
-                callback.onCreateAcountCompleted(mCurrentUser)
+                callback.onCreateAccountCompleted(mCurrentUser)
 
             }
         }

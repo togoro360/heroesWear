@@ -1,4 +1,0 @@
-#Tue May 01 16:21:26 IDT 2018
-base.0=/Users/livnatavikasis/Documents/HeroesHakaton/heroesWear/HeroesMakers/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

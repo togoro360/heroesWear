@@ -33,6 +33,7 @@ import com.google.firebase.auth.FirebaseUser
 
 import app.heroeswear.com.heroesmakers.R
 import app.heroeswear.com.heroesmakers.login.models.User
+import common.AppSettingsProfile
 import common.BaseActivity
 import kotlinx.android.synthetic.main.email_signin_login.*
 
@@ -76,7 +77,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         currentUser = fbManager?.onStart()
-        updateUI(currentUser)
+//        updateUI(currentUser)
     }
     // [END on_start_check_user]
 
@@ -92,12 +93,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
         // TODO convert to kotlin and add coroutines for hideProgressDialog();
         currentUser = fbManager?.createAccount(email, password,this)
 
-        currentUser.let {
-            mUser = User()
-            mUser.userId = currentUser?.uid
-            mUser.email = email
-        }
-        updateUI(currentUser)
+
         hideProgressDialog()
 
         // [END create_user_with_email]
@@ -183,7 +179,13 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
 //            signed_in_buttons.setVisibility(View.VISIBLE)
 //
 //            verify_email_button.setEnabled(!user.isEmailVerified)
-//            openHomePage(mUser)
+            user.let {
+                mUser = User()
+                mUser.userId = user?.uid
+                mUser.email = user?.email
+                openHomePage(mUser)
+            }
+//
         } else {
             mStatusTextView!!.setText(R.string.signed_out)
             mDetailTextView!!.text = null
@@ -195,8 +197,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
     }
 
 
-    override fun onCreateAcountCompleted(user: FirebaseUser?) {
-        currentUser = user
+    override fun onCreateAccountCompleted(user: FirebaseUser?) {
         user.let {
             mUser = User()
             mUser.userId = user?.uid
@@ -204,10 +205,18 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
         }
         updateUI(user)
         hideProgressDialog()
+        AppSettingsProfile.getInstance().setUserID(mUser.userId)
+        AppSettingsProfile.getInstance().isSignedIn = true
     }
 
     override fun onSignInCompleted(user: FirebaseUser?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        if (AppSettingsProfile.getInstance().isSignedIn )
+            user.let {
+                mUser = User()
+                mUser.userId = user?.uid
+                mUser.email = user?.email
+            }
+            openHomePage(mUser)
     }
 
     override fun onSignOutCompleted() {
