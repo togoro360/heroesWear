@@ -17,6 +17,10 @@
         <item name="android:textSize">36sp</item>
     </style>
 
+    <style name="Theme_Toolbar.Toolbar" parent="Theme.AppCompat">
+        <item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner</item>
+    </style>
+
     <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
