@@ -207,6 +207,8 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
         hideProgressDialog()
         AppSettingsProfile.getInstance().setUserID(mUser.userId)
         AppSettingsProfile.getInstance().isSignedIn = true
+
+        initEmpaE4()
     }
 
     override fun onSignInCompleted(user: FirebaseUser?) {
@@ -216,7 +218,8 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
                 mUser.userId = user?.uid
                 mUser.email = user?.email
             }
-            openHomePage(mUser)
+        initEmpaE4()
+        openHomePage(mUser)
     }
 
     override fun onSignOutCompleted() {

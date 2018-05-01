@@ -1,5 +1,7 @@
 package app.heroeswear.com.heroesfb
 
+import android.content.ContentValues.TAG
+import android.util.Log
 import app.heroeswear.com.common.FBCalbacks
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -73,12 +75,12 @@ class FirebaseManager() {
         Logger.d("user push token: $token")
     }
 
-    fun addHRMeasurementToken() {
-        val token = FirebaseInstanceId.getInstance().token
-        mDatabase.child("measurements").child(getUid()).child("token").setValue(
-                MeasurementData("0","0","0","0","0")
+    fun addHRMeasurementToken(data: MeasurementData) {
+        var newPostKey = mDatabase.child("measurements").push().key;
+        mDatabase.child("measurements").child(getUid()).child(newPostKey).setValue(data
         )
-        Log.d(TAG, "user push token: $token")
+        Log.e("DAVID_FIRE_BASE", "key:" + newPostKey);
+        Log.e("DAVID_FIRE_BASE", "uuid:" + getUid());
     }
 
     fun getUid(): String {
@@ -90,8 +92,15 @@ class FirebaseManager() {
     }
 
     companion object {
+        private val mInstance: FirebaseManager = FirebaseManager()
+
+        @Synchronized
         fun newInstance(): FirebaseManager {
-            return FirebaseManager()
+            return mInstance
         }
+
+//        fun newInstance(): FirebaseManager {
+//            return FirebaseManager()
+//        }
     }
 }

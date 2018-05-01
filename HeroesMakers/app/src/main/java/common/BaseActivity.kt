@@ -51,14 +51,13 @@ open class BaseActivity : AppCompatActivity() ,  NavigationView.OnNavigationItem
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         fbManager = FirebaseManager.newInstance()
-        initEmpaE4()
     }
 
 
     protected fun populateNavigationHeaderView(isInit: Boolean) {
         val headerView = mNavigationView?.getHeaderView(0)
         (headerView?.findViewById(R.id.lbl_name) as TextView).setText(fbManager?.mCurrentUser?.email)
-
+        initEmpaE4()
     }
 
     protected fun initNavigationDrawer() {
@@ -156,7 +155,7 @@ open class BaseActivity : AppCompatActivity() ,  NavigationView.OnNavigationItem
     }
 
 
-    private fun initEmpaE4() {
+     fun initEmpaE4() {
         if (ContextCompat.checkSelfPermission
                 (this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION), REQUEST_PERMISSION_ACCESS_COARSE_LOCATION)
