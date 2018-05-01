@@ -37,8 +37,10 @@ class FirebaseManager() {
                 // Sign in success, update UI with the signed-in user's information
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
-                updateUserToken()
+                updateUserEmail(email)
+                updatePushToken()
                 callback.onCreateAccountCompleted(mCurrentUser)
+
             } else {
                 // If sign in fails, display a message to the user.
                 Logger.e("Error: ${task.exception}")
@@ -56,7 +58,8 @@ class FirebaseManager() {
                 // Sign in success, update UI with the signed-in user's information
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
-                updateUserToken()
+                updateUserEmail(email)
+                updatePushToken()
                 callback.onSignInCompleted(mCurrentUser)
 
             } else {
@@ -70,10 +73,17 @@ class FirebaseManager() {
         return mCurrentUser
     }
 
-    private fun updateUserToken() {
-        val token = FirebaseInstanceId.getInstance().token
-        mDatabase.child("users").child(getUid()).child("token").setValue(token)
-        Logger.d("user push token: $token")
+    fun updateUserEmail(email: String) {
+        mDatabase.child("users").child(getUid()).child("email").setValue(email)
+    }
+
+    fun updatePushToken() {
+        mDatabase.child("users").child(getUid()).child("token").setValue(getPushToken())
+        Logger.d("user push token: ${getPushToken()}")
+    }
+
+    fun getPushToken(): String {
+        return FirebaseInstanceId.getInstance().token ?: ""
     }
 
     fun addHRMeasurementToken(data: MeasurementData) {
