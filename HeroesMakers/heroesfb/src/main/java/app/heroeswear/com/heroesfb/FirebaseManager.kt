@@ -60,6 +60,10 @@ import com.google.android.gms.tasks.Task
         return mCurrentUser
     }
 
+    fun getUid(): String {
+        return mCurrentUser!!.uid
+    }
+
     fun signOut(){
         mAuth.signOut()
     }

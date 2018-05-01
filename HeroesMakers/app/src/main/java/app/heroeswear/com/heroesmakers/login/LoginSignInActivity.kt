@@ -16,6 +16,7 @@
 
 package app.heroeswear.com.heroesmakers.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -187,6 +188,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
             signed_in_buttons.setVisibility(View.VISIBLE)
 
             verify_email_button.setEnabled(!user.isEmailVerified)
+            openHomePage(mUser)
         } else {
             mStatusTextView!!.setText(R.string.signed_out)
             mDetailTextView!!.text = null
@@ -196,6 +198,8 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
             signed_in_buttons.setVisibility(View.GONE)
         }
     }
+
+
 
     override fun onClick(v: View) {
         val i = v.id
