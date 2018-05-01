@@ -50,7 +50,6 @@ open class BaseActivity : AppCompatActivity() ,  NavigationView.OnNavigationItem
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.i("david", "onCreate")
         fbManager = FirebaseManager.newInstance()
         initEmpaE4()
     }

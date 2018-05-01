@@ -12,12 +12,23 @@ import com.empatica.empalink.config.EmpaSensorType;
 import com.empatica.empalink.config.EmpaStatus;
 import com.empatica.empalink.delegate.EmpaDataDelegate;
 import com.empatica.empalink.delegate.EmpaStatusDelegate;
+import app.heroeswear.com.heroesfb.FirebaseManager;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class EmpaE4 extends IntentService implements EmpaDataDelegate, EmpaStatusDelegate {
 
     private static final String EMPATICA_API_KEY = "b1e5dc72e0d64626ba5138285a78480e"; //ADD API KEY
+    //private static final long START_DELAY_MS = (1000*60*5);
+    private static final long START_DELAY_MS = (1000);
+    //private static final long EMPA_TIMER_PERIOD_MS = (1000*60);
+    private static final long EMPA_TIMER_PERIOD_MS = (1000);
     private EmpaDeviceManager deviceManager = null;
+    private MeasurementClass measure_gsr = new MeasurementClass(60,10);
+    private Timer timer = new Timer();
+    private FirebaseManager fbManager;
 
     /**
      * A constructor is required, and must call the super IntentService(String)
@@ -35,6 +46,12 @@ public class EmpaE4 extends IntentService implements EmpaDataDelegate, EmpaStatu
     @Override
     protected void onHandleIntent(Intent intent) {
         initEmpaticaDeviceManager();
+
+        fbManager = FirebaseManager.Companion.newInstance();
+        fbManager.onCreate();
+
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new empaTimer(),START_DELAY_MS , EMPA_TIMER_PERIOD_MS);
     }
 
     private void initEmpaticaDeviceManager() {
@@ -139,6 +156,12 @@ public class EmpaE4 extends IntentService implements EmpaDataDelegate, EmpaStatu
     @Override
     public void didReceiveGSR(float gsr, double timestamp) {
         Log.e("moshe", timestamp + " gsr" + gsr);
+        measure_gsr.add_mes(gsr,timestamp);
+        Log.e("david", "get_current(): " + measure_gsr.get_current());
+        for(float num : measure_gsr.get_last_samples())
+        {
+            Log.e("david", "sample: " + num);
+        }
     }
 
     @Override
@@ -181,5 +204,13 @@ public class EmpaE4 extends IntentService implements EmpaDataDelegate, EmpaStatu
 //        });
     }
 
+    class empaTimer extends TimerTask {
 
+        @Override
+        public void run() {
+            Log.e("david_TIMER","TIMER_TICK");
+            fbManager.addHRMeasurementToken();
+        }
+    };
 }
+

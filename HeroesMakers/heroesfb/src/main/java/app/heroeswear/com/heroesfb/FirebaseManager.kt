@@ -9,7 +9,6 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.iid.FirebaseInstanceId
 
-
 /**
  * Created by livnatavikasis on 29/04/2018.
  */
@@ -72,6 +71,14 @@ class FirebaseManager() {
         val token = FirebaseInstanceId.getInstance().token
         mDatabase.child("users").child(getUid()).child("token").setValue(token)
         Logger.d("user push token: $token")
+    }
+
+    fun addHRMeasurementToken() {
+        val token = FirebaseInstanceId.getInstance().token
+        mDatabase.child("measurements").child(getUid()).child("token").setValue(
+                MeasurementData("0","0","0","0","0")
+        )
+        Log.d(TAG, "user push token: $token")
     }
 
     fun getUid(): String {
