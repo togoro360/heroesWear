@@ -5,6 +5,8 @@ package app.heroeswear.com.heroesmakers.login.models;
  */
 
 public class Settings {
+    private static Settings _instance = new Settings();
+
     private User mUser;
 
     public User getUser() {

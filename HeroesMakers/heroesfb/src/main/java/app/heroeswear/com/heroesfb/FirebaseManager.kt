@@ -2,6 +2,7 @@ package app.heroeswear.com.heroesfb
 
 import android.content.ContentValues.TAG
 import android.util.Log
+import app.heroeswear.com.common.FBCalbacks
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.AuthResult
@@ -31,24 +32,26 @@ class FirebaseManager() {
         return mCurrentUser
     }
 
-    fun createAccount(email: String, pwd: String): FirebaseUser? {
+    fun createAccount(email: String, pwd: String, callback: FBCalbacks ): FirebaseUser? {
         mAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener { task: Task<AuthResult> ->
             if (task.isSuccessful) {
                 // Sign in success, update UI with the signed-in user's information
                 Logger.d("Success")
                 mCurrentUser = mAuth.currentUser
                 updateUserToken()
-
+                callback.onCreateAcountCompleted(mCurrentUser)
             } else {
                 // If sign in fails, display a message to the user.
                 Logger.e("Error: ${task.exception}")
                 mCurrentUser = null //updateUI(null)
+                callback.onCreateAcountCompleted(mCurrentUser)
+
             }
         }
         return mCurrentUser
     }
 
-    fun signInUser(email: String, pwd: String): FirebaseUser? {
+    fun signInUser(email: String, pwd: String, callback: FBCalbacks): FirebaseUser?{
         mAuth.signInWithEmailAndPassword(email, pwd).addOnCompleteListener { task: Task<AuthResult> ->
             if (task.isSuccessful) {
                 // Sign in success, update UI with the signed-in user's information
@@ -60,6 +63,8 @@ class FirebaseManager() {
                 // If sign in fails, display a message to the user.
                 Logger.e("Error: ${task.exception}")
                 mCurrentUser = null
+                callback.onSignInCompleted(mCurrentUser)
+
             }
         }
         return mCurrentUser

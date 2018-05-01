@@ -18,12 +18,14 @@ package app.heroeswear.com.heroesmakers.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import app.heroeswear.com.common.FBCalbacks
 import app.heroeswear.com.heroesfb.FirebaseManager
 
 import com.google.firebase.auth.FirebaseAuth
@@ -34,7 +36,7 @@ import app.heroeswear.com.heroesmakers.login.models.User
 import common.BaseActivity
 import kotlinx.android.synthetic.main.email_signin_login.*
 
-class LoginSignInActivity : BaseActivity(), View.OnClickListener {
+class LoginSignInActivity : BaseActivity(), View.OnClickListener, FBCalbacks {
 
     private var mStatusTextView: TextView? = null
     private var mDetailTextView: TextView? = null
@@ -63,7 +65,6 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
         email_create_account_button.setOnClickListener(this)
         sign_out_button.setOnClickListener(this)
         verify_email_button.setOnClickListener(this)
-        fbManager = FirebaseManager.newInstance()
 
         // [START initialize_auth]
         fbManager?.onCreate()
@@ -89,7 +90,7 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
 
         // [START create_user_with_email]
         // TODO convert to kotlin and add coroutines for hideProgressDialog();
-        currentUser = fbManager?.createAccount(email, password)
+        currentUser = fbManager?.createAccount(email, password,this)
 
         currentUser.let {
             mUser = User()
@@ -110,14 +111,8 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
 
         showProgressDialog()
         // TODO convert to kotlin and add coroutines for hideProgressDialog();
-        currentUser = fbManager?.signInUser(email, password)
-        let {
-            mUser = User()
-            mUser.userId = currentUser?.uid
-            mUser.email = currentUser?.email
-        }
-        updateUI(currentUser)
-        hideProgressDialog()
+        currentUser = fbManager?.signInUser(email, password,this)
+
 
     }
 
@@ -179,15 +174,15 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
     private fun updateUI(user: FirebaseUser?) {
         hideProgressDialog()
         if (user != null) {
-            mStatusTextView!!.text = getString(R.string.emailpassword_status_fmt,
-                    user.email, user.isEmailVerified)
-            mDetailTextView!!.text = getString(R.string.firebase_status_fmt, user.uid)
-
-            email_password_buttons.setVisibility(View.GONE)
-            email_password_fields.setVisibility(View.GONE)
-            signed_in_buttons.setVisibility(View.VISIBLE)
-
-            verify_email_button.setEnabled(!user.isEmailVerified)
+//            mStatusTextView!!.text = getString(R.string.emailpassword_status_fmt,
+//                    user.email, user.isEmailVerified)
+//            mDetailTextView!!.text = getString(R.string.firebase_status_fmt, user.uid)
+//
+//            email_password_buttons.setVisibility(View.GONE)
+//            email_password_fields.setVisibility(View.GONE)
+//            signed_in_buttons.setVisibility(View.VISIBLE)
+//
+//            verify_email_button.setEnabled(!user.isEmailVerified)
 //            openHomePage(mUser)
         } else {
             mStatusTextView!!.setText(R.string.signed_out)
@@ -200,7 +195,24 @@ class LoginSignInActivity : BaseActivity(), View.OnClickListener {
     }
 
 
+    override fun onCreateAcountCompleted(user: FirebaseUser?) {
+        currentUser = user
+        user.let {
+            mUser = User()
+            mUser.userId = user?.uid
+            mUser.email = user?.email
+        }
+        updateUI(user)
+        hideProgressDialog()
+    }
 
+    override fun onSignInCompleted(user: FirebaseUser?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSignOutCompleted() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
     override fun onClick(v: View) {
         val i = v.id
         if (i == R.id.email_create_account_button) {
