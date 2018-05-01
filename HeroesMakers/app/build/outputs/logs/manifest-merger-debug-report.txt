@@ -1,0 +1,491 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+MERGED from [:heroesfb] C:\yehuda\projects\heroesWear\HeroesMakers\heroesfb\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\45eb126d70119d87388bbb80742f2143\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:16:1-30:12
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:16:1-26:12
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6af82ca020a83859e021c1c4daccad18\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\121f63aa6f4f98321ae772d3eff6f395\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\268c6039a3d7329c2fd4d0c3df5f86fe\AndroidManifest.xml:2:1-4:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\42ce64f6c307a19bb52b54d53eb44a39\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:16:1-35:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:16:1-50:12
+MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\9fd06e36e906f99b0ec174d203556c86\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5cd89a6a4d2989396f91b653b33d0680\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+	package
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:8:22-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:10:5-67
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:13:5-67
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:10:22-64
+application
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:12:5-43:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\45eb126d70119d87388bbb80742f2143\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\45eb126d70119d87388bbb80742f2143\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:19:5-25:19
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:19:5-24:19
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:19:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6af82ca020a83859e021c1c4daccad18\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6af82ca020a83859e021c1c4daccad18\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\121f63aa6f4f98321ae772d3eff6f395\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\121f63aa6f4f98321ae772d3eff6f395\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5cd89a6a4d2989396f91b653b33d0680\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5cd89a6a4d2989396f91b653b33d0680\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:16:9-41
+	android:roundIcon
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:17:9-54
+	android:icon
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:14:9-35
+	android:theme
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:19:9-40
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:13:9-46
+activity#app.heroeswear.com.heroesmakers.login.Activities.EmergencyContactsActivity
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:20:9-28:20
+	android:label
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:22:13-45
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:21:13-71
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:26:27-74
+service#common.EmpaE4
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:30:9-49
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:30:18-46
+service#app.heroeswear.com.heroesmakers.login.fcm.HeroesFirebaseMessagingService
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:31:9-35:19
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:31:18-74
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:32:13-34:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:33:17-78
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:33:25-75
+service#app.heroeswear.com.heroesmakers.login.fcm.HeroesFirebaseInstanceIdService
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:36:9-40:19
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:36:18-75
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:37:13-39:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:38:17-80
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:38:25-77
+activity#app.heroeswear.com.heroesmakers.login.Activities.NewContactActivity
+ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:42:9-73
+	android:name
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml:42:19-70
+uses-sdk
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+MERGED from [:heroesfb] C:\yehuda\projects\heroesWear\HeroesMakers\heroesfb\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:heroesfb] C:\yehuda\projects\heroesWear\HeroesMakers\heroesfb\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\45eb126d70119d87388bbb80742f2143\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\45eb126d70119d87388bbb80742f2143\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:17:5-43
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:7:5-9:41
+MERGED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6af82ca020a83859e021c1c4daccad18\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6af82ca020a83859e021c1c4daccad18\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\121f63aa6f4f98321ae772d3eff6f395\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\121f63aa6f4f98321ae772d3eff6f395\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\268c6039a3d7329c2fd4d0c3df5f86fe\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\268c6039a3d7329c2fd4d0c3df5f86fe\AndroidManifest.xml:3:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\42ce64f6c307a19bb52b54d53eb44a39\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\42ce64f6c307a19bb52b54d53eb44a39\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\9fd06e36e906f99b0ec174d203556c86\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\9fd06e36e906f99b0ec174d203556c86\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5cd89a6a4d2989396f91b653b33d0680\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\5cd89a6a4d2989396f91b653b33d0680\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		ADDED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+		INJECTED from C:\yehuda\projects\heroesWear\HeroesMakers\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\8d671a96a2ddcda0fa74d8932ecf9f16\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1b9bfd13f272da938f81be34bee5140a\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8275eed5848040883bf56349385627f2\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\7c5a96cab4204a56f3e0520450fee623\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\cd7019c565b7a05f8b52e47e2c63575d\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\136d16b2a1b20494f119d3dbeccaca21\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\528a5070bc2b8ca3be2f36f171ccbe40\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\f79b91b91884a449e35856f08e98ac9c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\c6e06872d7ec15d60c14c50cd8f133cb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\fc8ac6c773065819f7af5f568b6f829d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\0fa0470d6ff1ad750789294b5c849715\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7b1979a7f7a7d27cdf89ef05a2f550d9\AndroidManifest.xml:27:13-51
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.0.4.aar\4a4bc345920254235bcc06fc2cb07dc5\AndroidManifest.xml:23:18-87
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\3a2b4027135f552a1d1d2df52008a5d8\AndroidManifest.xml:24:18-63
+uses-permission#android.permission.BLUETOOTH
+ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:12:22-71
+uses-feature#android.hardware.bluetooth_le
+ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:15:5-17:35
+	android:required
+		ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:17:9-32
+	android:name
+		ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:16:9-53
+service#com.empatica.empalink.EmpaLinkBLE
+ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:23:9-69
+	android:name
+		ADDED from [com.empatica.empalink:empalink:2.2] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\empalink-2.2.aar\f84feb90ac181bf1845f66fd4224ca67\AndroidManifest.xml:23:18-66
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9133e63324364b5b5d33e0f8acdf4d2b\AndroidManifest.xml:19:19-85
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:27:17-104
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\9f6a6db15d9c49539a3b3a438f54c103\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\8c1430fb0fe6637ebb4b1bd73d4dfbeb\AndroidManifest.xml:33:16-90
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:24:17-71
+permission#app.heroeswear.com.heroesmakers.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:26:22-76
+uses-permission#app.heroeswear.com.heroesmakers.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:30:19-84
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:31:13-34:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:app.heroeswear.com.heroesmakers
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:33:27-58
+category#app.heroeswear.com.heroesmakers
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\a3b86346313773916181d31089ad2d9b\AndroidManifest.xml:43:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\776a0e8e0fe90b9f4cc8e84ee57f5855\AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\02fe400c55aa5325d020def1d3466b03\AndroidManifest.xml:20:20-65
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\guestmakers\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\3609d8cd9a03d4da10fc366bf1ddcc64\AndroidManifest.xml:26:13-58
