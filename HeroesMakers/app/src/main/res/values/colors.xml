@@ -8,5 +8,8 @@
     <color name="grey_500">#9E9E9E</color>
     <color name="p_Light">#e5ffff</color>
     <color name="white">#ffffff</color>
+    <color name="p_drawer">#b2dfdb</color>
+    <color name="drawer_divider">#DDDDDD</color>
+
 
 </resources>
